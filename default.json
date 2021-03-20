@@ -1,8 +1,40 @@
 {
   "meta": {
-
+    "name": "Default",
+    "rootId": "app",
+    "style": "",
+    "stylePaths": []
   },
   "data": {
-    
+    "header": {
+      "contents": "Header"
+    },
+    "body": {
+      "contents": "Body"
+    },
+    "footer": {
+      "class": "footer",
+      "contents": [
+        {
+          "class": "footer-title",
+          "contents": "Created using JSON Document"
+        },
+        {
+          "class": "footer-subtitle",
+          "contents": "Developed by {{{href}}}",
+          "props": {
+            "href": "<a href='https://github.com/nishanbajracharya'>@nisbaj</a>"
+          }
+        },
+        {
+          "tag": "img",
+          "class": "",
+          "attributes": {
+            "src": "favicon.ico",
+            "alt": "Icon"
+          }
+        }
+      ]
+    }
   }
 }
