@@ -1,0 +1,24 @@
+{
+  "name": "json-document",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass src/styles/index.scss public/style.css --watch",
+    "build": "sass src/styles/index.scss public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishanbajracharya/json-document.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nishanbajracharya/json-document/issues"
+  },
+  "homepage": "https://github.com/nishanbajracharya/json-document#readme",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}

@@ -1,0 +1,33 @@
+body {
+  color: #424242;
+  background: #efefef;
+}
+
+a {
+  color: #4499cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 60em) {
+  .app {
+    margin: 0 auto;
+    max-width: 60em;
+  }
+}
+/* Components*/
+.header {
+  text-align: center;
+}
+.header .header-subtitle .content {
+  margin: 0 8px;
+}
+
+.footer {
+  text-align: center;
+  color: #666666;
+}
+
+/*# sourceMappingURL=style.css.map */

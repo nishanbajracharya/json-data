@@ -3,35 +3,55 @@
     "name": "Default",
     "rootId": "app",
     "style": "",
-    "stylePaths": []
+    "stylePaths": ["public/style.css"]
   },
   "data": {
     "header": {
-      "contents": "Header"
+      "tag": "header",
+      "class": "header",
+      "contents": [
+        {
+          "tag": "h1",
+          "class": "header-title",
+          "contents": "John Doe"
+        },
+        {
+          "class": "header-subtitle",
+          "contents": [
+            {
+              "tag": "span",
+              "contents": "{{{image}}} Email {{{value}}}",
+              "props": {
+                "value": "<a href=\"mailto:#\" rel=\"noopenner noreferrer\" target=\"_blank\">johndoe@example.com</a>",
+                "image": "<i class=\"fas fa-envelope\"></i>"
+              }
+            },
+            {
+              "tag": "span",
+              "contents": "{{{image}}} Github {{{value}}}",
+              "props": {
+                "value": "<a href=\"#\" rel=\"noopenner noreferrer\" target=\"_blank\">johndoe</a>",
+                "image": "<i class=\"fab fa-github\"></i>"
+              }
+            }
+          ]
+        }
+      ]
     },
     "body": {
-      "contents": "Body"
+      "tag": "main",
+      "class": "main",
+      "contents": ""
     },
     "footer": {
+      "tag": "footer",
       "class": "footer",
       "contents": [
         {
           "class": "footer-title",
-          "contents": "Created using JSON Document"
-        },
-        {
-          "class": "footer-subtitle",
-          "contents": "Developed by {{{href}}}",
+          "contents": "Created using {{{link}}}",
           "props": {
-            "href": "<a href='https://github.com/nishanbajracharya'>@nisbaj</a>"
-          }
-        },
-        {
-          "tag": "img",
-          "class": "",
-          "attributes": {
-            "src": "favicon.ico",
-            "alt": "Icon"
+            "link": "<a href=\"https://github.com/nishanbajracharya/json-document\" target=\"_blank\" rel=\"noopenner noreferrer\">JSON Document</a>"
           }
         }
       ]

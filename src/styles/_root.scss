@@ -1,0 +1,13 @@
+body {
+  color: $primary-text-color;
+  background: $background-color;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
