@@ -1,4 +1,4 @@
-function generateHTML(content = '', props = {}) {
+function toHTML(content = '', props = {}) {
   var template = Handlebars.compile(content);
   return template(props);
 }
