@@ -1,5 +1,5 @@
 function fetchDocument(documentName = 'default') {
-  return fetch(`${documentName}.json`).then((response) => response.json());
+  return http.get(`public/${documentName}.json`);
 }
 
 function getNode(jsonDocument, path = '', defaults = DEFAULTS) {
@@ -7,7 +7,13 @@ function getNode(jsonDocument, path = '', defaults = DEFAULTS) {
 }
 
 async function init() {
-  const jsonDocument = await fetchDocument();
+  let jsonDocument = DEFAULTS;
+
+  try {
+    jsonDocument = await fetchDocument();
+  } catch (e) {
+    console.log('[LOG] Error fetching data. Loading default', e);
+  }
 
   const documentRootId = getNode(jsonDocument, 'meta.rootId');
   const rootDOM = document.getElementById(documentRootId);
