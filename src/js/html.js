@@ -11,7 +11,7 @@ const html = {
     dom.appendChild(stylePath);
   },
   generate(content, props) {
-    return toHTML(content, props);
+    return compileHTML(content, props);
   },
   setAttributes(dom, attributes = {}) {
     dom &&
