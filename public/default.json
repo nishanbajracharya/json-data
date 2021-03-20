@@ -19,7 +19,7 @@
           "class": "header-subtitle",
           "contents": [
             {
-              "tag": "span",
+              "class": "header-link",
               "contents": "{{{image}}} Email {{{value}}}",
               "props": {
                 "value": "<a href=\"mailto:#\" rel=\"noopenner noreferrer\" target=\"_blank\">johndoe@example.com</a>",
@@ -27,7 +27,7 @@
               }
             },
             {
-              "tag": "span",
+              "class": "header-link",
               "contents": "{{{image}}} Github {{{value}}}",
               "props": {
                 "value": "<a href=\"#\" rel=\"noopenner noreferrer\" target=\"_blank\">johndoe</a>",
@@ -41,7 +41,57 @@
     "body": {
       "tag": "main",
       "class": "main",
-      "contents": ""
+      "contents": [{
+        "class": "section",
+        "contents": [{
+          "tag": "h2",
+          "class": "section-title",
+          "contents": "Section Title 1"
+        }, {
+          "class": "section-body",
+          "contents": "Section Body Text"
+        }]
+      }, {
+        "class": "section",
+        "contents": [{
+          "tag": "h2",
+          "class": "section-title",
+          "contents": "Section Title 2"
+        }, {
+          "class": "section-body",
+          "contents": [{
+            "tag": "ul",
+            "class": "section-list",
+            "contents": [{
+              "tag": "li",
+              "class": "section-list-item",
+              "contents": "Section Item 1"
+            }]
+          }]
+        }]
+      }, {
+        "class": "section",
+        "contents": [{
+          "tag": "h2",
+          "class": "section-title",
+          "contents": "Section Title 3"
+        }, {
+          "class": "section-body",
+          "contents": [{
+            "tag": "ul",
+            "class": "section-list",
+            "contents": [{
+              "tag": "li",
+              "class": "section-list-item",
+              "contents": "Section Item 1"
+            }, {
+              "tag": "li",
+              "class": "section-list-item",
+              "contents": "Section Item 2"
+            }]
+          }]
+        }]
+      }]
     },
     "footer": {
       "tag": "footer",

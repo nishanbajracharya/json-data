@@ -11,23 +11,40 @@ a:hover {
   text-decoration: underline;
 }
 
+.app {
+  padding: 0px 16px;
+}
+
 @media screen and (min-width: 60em) {
   .app {
     margin: 0 auto;
     max-width: 60em;
+  }
+
+  .header-link {
+    display: inline-block;
   }
 }
 /* Components*/
 .header {
   text-align: center;
 }
-.header .header-subtitle .content {
+.header .header-subtitle .header-link {
   margin: 0 8px;
+}
+
+.main .section-title {
+  margin: 20px 0 0;
+  color: #4499cc;
+}
+.main .section-list {
+  margin: 0;
 }
 
 .footer {
   text-align: center;
   color: #666666;
+  padding: 20px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
